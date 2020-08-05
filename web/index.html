@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro de alumno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Registro de alumno</h1>
+            <br>
+            <form method="get" action="GuardarRegistro" name="fromulario">
+                <table border="1">
+                    <tr><td>Nombre: </td><td><input type="text" name="nombre"></td></tr>
+                    <tr><td>Password: </td><td><input type="password" name="password"></td></tr>
+                    <tr><td>Email: </td><td><input type="email" name="email"></td></tr>
+                    <tr><td>País:</td><td>
+                            <select name="pais" style="width:150px">
+                                <option>India</option>
+                                <option>México</option>
+                                <option>Alemania</option>
+                                <option>Scandinavia</option>
+                            </select>
+                        </td></tr>
+                    <tr><td colspan="2"><input type="submit" value="Guardar registro"></td></tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <a href="ConsultarLista">Consultar lista de alumnos.</a>
+        </div>
+    </body>
+</html>
