@@ -12,6 +12,14 @@
         <servlet-name>EliminarAlumno</servlet-name>
         <servlet-class>EliminarAlumno</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EditarDatosDelAlumno</servlet-name>
+        <servlet-class>EditarDatosDelAlumno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarDatosDelAlumno2</servlet-name>
+        <servlet-class>EditarDatosDelAlumno2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GuardarRegistro</servlet-name>
         <url-pattern>/GuardarRegistro</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>EliminarAlumno</servlet-name>
         <url-pattern>/EliminarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarDatosDelAlumno</servlet-name>
+        <url-pattern>/EditarDatosDelAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarDatosDelAlumno2</servlet-name>
+        <url-pattern>/EditarDatosDelAlumno2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

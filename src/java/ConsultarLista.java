@@ -47,15 +47,15 @@ public class ConsultarLista extends HttpServlet {
                        for(Alumno a:lista)
                        {
                            out.println("<tr>"
-                                   +"<th>"+a.getId()+"</th>"
-                                   +"<th>"+a.getNombre()+"</th>"
-                                   +"<th>"+a.getPassword()+"</th>"
-                                   +"<th>"+a.getEmail()+"</th>"
-                                   +"<th>"+a.getPais()+"</th>"
+                                   +"<td>"+a.getId()+"</td>"
+                                   +"<td>"+a.getNombre()+"</td>"
+                                   +"<td>"+a.getPassword()+"</td>"
+                                   +"<td>"+a.getEmail()+"</td>"
+                                   +"<td>"+a.getPais()+"</td>"
                                    +"<br>"
-                                   +"<th><a href='EditarDatosDelAlumno?id="+a.getId()+"'>Editar datos del alumno</a></th>"
+                                   +"<td><a href='EditarDatosDelAlumno?id="+a.getId()+"'>Editar datos del alumno</a></td>"
                                    +"<br>"
-                                   +"<th><a href='EliminarAlumno?id="+a.getId()+"'>Eliminar alumno</a></th>"
+                                   +"<td><a href='EliminarAlumno?id="+a.getId()+"'>Eliminar alumno</a></td>"
                                    +"</tr>");
                            out.println("</table>");
                        }
