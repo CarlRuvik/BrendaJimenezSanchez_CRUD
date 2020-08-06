@@ -20,20 +20,21 @@ public class ConsultarLista extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Lista general de alumnos</title>");            
+            out.println("<title>Lista general de alumnos</title>"); 
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/ESTILO.css\">");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Lista general de alumnos</h1>"
                        +"<br>"
-                       +"<a href='index.html'>Regresar al menú principal</a>"
+                       +"<a class='LINK2' href='index.html'>Regresar al menú principal</a>"
                        +"<br>"
-                       +"<a href='GuardarRegistro'>Guardar nuevo alumno</a>");
+                       +"<a class='LINK2' href='index.html'>Guardar nuevo alumno</a>");
             
                        //Debemos obtener  la lista de los alumnos
                        List<Alumno> lista=AccionesDelAlumno.getAllAlumnos();
                        
                        //Ahora hacemos una tabla en donde se mostrará la lista:
-                       out.println("<table border='1'>");
+                       out.println("<table class='TABLE' border='2px'>");
                        out.println("<tr>"
                                    +"<th>ID</th>"
                                    +"<th>Nombre</th>"
@@ -53,9 +54,9 @@ public class ConsultarLista extends HttpServlet {
                                    +"<td>"+a.getEmail()+"</td>"
                                    +"<td>"+a.getPais()+"</td>"
                                    +"<br>"
-                                   +"<td><a href='EditarDatosDelAlumno?id="+a.getId()+"'>Editar datos del alumno</a></td>"
+                                   +"<td><a class='LINK2' href='EditarDatosDelAlumno?id="+a.getId()+"'>Editar datos del alumno</a></td>"
                                    +"<br>"
-                                   +"<td><a href='EliminarAlumno?id="+a.getId()+"'>Eliminar alumno</a></td>"
+                                   +"<td><a class='LINK2' href='EliminarAlumno?id="+a.getId()+"'>Eliminar alumno</a></td>"
                                    +"</tr>");
                            out.println("</table>");
                        }

@@ -39,7 +39,8 @@ public class GuardarRegistro extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Alumno registrado.</title>");            
+            out.println("<title>Alumno registrado.</title>");
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/ESTILO.css\">");
             out.println("</head>");
             out.println("<body>");
             
@@ -51,7 +52,7 @@ public class GuardarRegistro extends HttpServlet {
             {
                 out.println("<h1>No se pudo registrar el alumno.</h1>");
             }
-            out.println("<a href='index.html'>Regresar al menú principal</a>");
+            out.println("<a class='LINK2' href='index.html'>Regresar al menú principal</a>");
             out.println("</body>");
             out.println("</html>");
         }

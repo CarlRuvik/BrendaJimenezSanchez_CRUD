@@ -24,12 +24,13 @@ public class EditarDatosDelAlumno extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Ficha de los datos del alumno</title>");            
+            out.println("<title>Ficha de los datos del alumno</title>");
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/ESTILO.css\">");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Ficha para editar los datos del alumno</h1>");
             out.println("<form method='get' name='formulario' action='EditarDatosDelAlumno2'>");
-            out.println("<table border='1'>");
+            out.println("<table class='TABLE'>");
             out.println("<tr>"
                     + "<td></td>"
                     + "<td><input type='hidden' name='id2' value='"+a.getId()+"'></td>"
@@ -52,7 +53,7 @@ public class EditarDatosDelAlumno extends HttpServlet {
                             + "<option>Alemania</option>"
                             + "<option>Scandinavia</option>"
                             + "</select></td></tr>"
-                            + "<tr><td colspan='2'><input type='submit' value='Modificar'></td></tr>");
+                            + "<tr><td colspan='2'><br><input class='BOTON' type='submit' value='Modificar'></td></tr>");
             
             out.println("</table>");
             out.println("</form>");

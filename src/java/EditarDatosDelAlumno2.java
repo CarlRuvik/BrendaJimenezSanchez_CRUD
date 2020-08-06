@@ -47,12 +47,13 @@ public class EditarDatosDelAlumno2 extends HttpServlet {
                 out.println("<!DOCTYPE html>");
                 out.println("<html>");
                 out.println("<head>");
-                out.println("<title>Servlet EditarDatosDelAlumno2</title>");            
+                out.println("<title>Servlet EditarDatosDelAlumno2</title>");
+                out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/ESTILO.css\">");
                 out.println("</head>");
                 out.println("<body>");
                 out.println("<h1>Error al obtener los datos.</h1>"
                         + "<br>"
-                        + "<a href='index.html'>Regresar al menu principal</a>");
+                        + "<a class='LINK2' href='index.html'>Regresar al menu principal</a>");
                 out.println("</body>");
                 out.println("</html>");
             }

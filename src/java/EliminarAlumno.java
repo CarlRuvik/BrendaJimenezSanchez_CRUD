@@ -27,6 +27,7 @@ public class EliminarAlumno extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Eliminar</title>");
+            out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/ESTILO.css\">");
             out.println("</head>");
             out.println("<body>"
                         +"<h1>Alumno eliminado</h1>");
