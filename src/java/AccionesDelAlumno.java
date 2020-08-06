@@ -86,7 +86,7 @@ public class AccionesDelAlumno
             String query="UPDATE alumno SET nombre_alumno=?,pass_alumno=?,email_alumno=?,pais_alumno=? WHERE id_alumno=?";
             
             //Obtenemos los valores que epecificamos en el query(atributos):
-            //Preparamos la sentencia
+            //Preparamos la sentencia:
             PreparedStatement PS=conexion.prepareStatement(query); 
             
             //Con ayuda de los getters y setters
@@ -165,7 +165,7 @@ public class AccionesDelAlumno
             PreparedStatement PS=conexion.prepareStatement(query); 
             
             //Con ayuda de los getters y setters
-            PS.setInt(5,id);
+            PS.setInt(1,id);
             
             //Ejecutamos la consulta que preparamos:
             ResultSet RS=PS.executeQuery();

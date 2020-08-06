@@ -28,7 +28,7 @@ public class EditarDatosDelAlumno extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Ficha para editar los datos del alumno</h1>");
-            out.println("<form method='get' name='formulario' action='Editar2'>");
+            out.println("<form method='get' name='formulario' action='EditarDatosDelAlumno2'>");
             out.println("<table border='1'>");
             out.println("<tr>"
                     + "<td></td>"
@@ -36,7 +36,7 @@ public class EditarDatosDelAlumno extends HttpServlet {
                     + "</tr>"
                     + "<tr>"
                     + "<td>Nombre</td>"
-                    + "<td><input type='text' name='nombre' value='"+a.getNombre()+"'></td>"
+                    + "<td><input type='text' name='nombre2' value='"+a.getNombre()+"'></td>"
                     + "</tr>"
                     + "<tr>"
                     + "<td>Password</td>"
